@@ -1,13 +1,12 @@
-
-import com.codeborne.selenide.*;
-import com.codeborne.selenide.commands.DragAndDrop;
-import com.codeborne.selenide.commands.SelectRadio;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 import java.io.File;
 
 import static com.codeborne.selenide.Selenide.*;
+
 
 public class QAGuruHW3 {
     @Test
@@ -54,16 +53,3 @@ public class QAGuruHW3 {
         Selenide.sleep(10000);
     }
 }
-/*$("value=\"Male\"").click();
-        $("id=userNumber").setValue("9213824198");
-
-        $("id=subjectsInput").setValue("12345678910");
-        $("id=\"hobbies-checkbox-1\"").click();
-        $("id=\"hobbies-checkbox-2\"").click();
-        $("id=\"hobbies-checkbox-3\"").click();
-
-        $("id=currentAddress").setValue("Kulture ave, 11/1");
-        $("class=\" css-1uccc91-singleValue\"").setValue("Rajasthan");
-        $("class=\" css-1uccc91-singleValue\"").setValue("Jaipur");
-        $("id=submit").click();
-        DragAndDropOptions.to("id=\"submit\"").;*/
