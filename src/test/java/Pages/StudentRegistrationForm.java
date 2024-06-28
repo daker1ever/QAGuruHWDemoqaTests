@@ -23,7 +23,7 @@ public class StudentRegistrationForm {
             userSubjectsInput = $("#subjectsInput"),
             userHobbiesInput = $("#hobbiesWrapper"),
             userPictureUpload = $("#uploadPicture"),
-            userAdressInput = $("#currentAddress"),
+            userAddressInput = $("#currentAddress"),
             userStateInput = $("#state"),
             userCityInput = $("#city"),
             submitButton = $("#submit"),
@@ -72,7 +72,7 @@ public class StudentRegistrationForm {
 
     public StudentRegistrationForm setUserSubjects(String subject) {
         userSubjectsInput.setValue("a");
-        $("#subjectsWrapper").$(byText(subject)).click();
+        $("#subjectsWrapper").$("#subjectsInput").setValue(subject).pressEnter();
         return this;
     }
 
@@ -87,7 +87,7 @@ public class StudentRegistrationForm {
     }
 
     public StudentRegistrationForm setUserAdress(String adress) {
-        userAdressInput.setValue(adress);
+        userAddressInput.setValue(adress);
         return this;
     }
 
