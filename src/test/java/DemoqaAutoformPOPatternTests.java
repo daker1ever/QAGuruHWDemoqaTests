@@ -1,4 +1,5 @@
 import Pages.StudentRegistrationForm;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -11,6 +12,7 @@ public class DemoqaAutoformPOPatternTests extends TestBase {
     TestData testData = new TestData();
 
     @Test
+    @Tag("full_form")
     void fillFormTest() {
         List<String> expectedData = List.of
                 (testData.userName + " " + testData.userLastName,
@@ -42,6 +44,7 @@ public class DemoqaAutoformPOPatternTests extends TestBase {
     }
 
     @Test
+    @Tag("min_form")
     void fillMinimalDataFormTest() {
         List<String> expectedData = List.of
                 (
@@ -61,6 +64,7 @@ public class DemoqaAutoformPOPatternTests extends TestBase {
     }
 
     @Test
+    @Tag("negative")
     void negativeFillDataFormTest() {
 
         studentRegistrationForm.openStudentRegistrationFormPage()

@@ -1,17 +1,11 @@
 import Pages.TextBox;
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-public class DemoQATextBoxTests {
+public class DemoQATextBoxTests extends TestBase{
     TextBox textBox = new TextBox();
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.browserSize = "1900x1080";
-    }
+
     @Test
     void fillTextForm() {
         List<String> expectedData = List.of
