@@ -14,7 +14,7 @@ import java.util.Map;
 public class TestBase {
     @BeforeAll
     static void configuration() {
-        Configuration.baseUrl = System.getProperty("https://demoqa.com"); //
+        Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion", "125");
